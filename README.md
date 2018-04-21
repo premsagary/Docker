@@ -1,3 +1,3 @@
-Docekr 
+Doceker 
 
 Everything about Docker

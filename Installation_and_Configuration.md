@@ -1,4 +1,4 @@
-**** GO TO *[HOME PAGE](index.md)*
+#### GO TO *[HOME PAGE](index.md)*
 
 # Installation 
 

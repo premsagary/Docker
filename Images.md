@@ -39,9 +39,8 @@
      
      
      Default tag will be latest, it will pull the latest image
-     Digest is the SNAPSHOT. when we pull, it will download one or more snapshots to download the base images completely.
      
-     
+   
      prems-MacBook-Air:~ root# docker images
      REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
      hello-world         latest              e38bc07ac18e        10 days ago         1.85kB
@@ -69,6 +68,37 @@
      hello-world         latest              e38bc07ac18e        10 days ago         1.85kB
      centos              centos6             70b5d81549ec        2 weeks ago         195MB
      centos              latest              e934aafc2206        2 weeks ago         199MB
+     
+     prems-MacBook-Air:~ root# docker pull nginx:latest
+     latest: Pulling from library/nginx
+     2a72cbf407d6: Pull complete 
+     04b2d3302d48: Pull complete 
+     e7f619103861: Pull complete 
+     Digest: sha256:18156dcd747677b03968621b2729d46021ce83a5bc15118e5bcced925fb4ebb9
+     Status: Downloaded newer image for nginx:latest
+     
+     If you see when I pulled nginx:latest its pulling multiple layers for base image(2a72cbf407d6,04b2d3302d48,e7f619103861)
+     The reason is 2a72cbf407d6 would be underlying operating system 
+     04b2d3302d48 would be Nginx package installation on the image
+     e7f619103861 may be nginx configuration
+     
+     When you build/customize a container after pulling the base image, each change you make will become a layer or snapshot        that are added to the image. It will be more clear when we start commiting the images.
+     
+## Inspect Images
+
+     If you want to more about the image yoou can use this command, output will be in JSON.
+     docker inspect IMAGE ID / REPOSITORY:TAG 
+     prems-MacBook-Air:~ root# docker inspect nginx:latest
+     [
+          {
+        "Id": "sha256:b175e7467d666648e836f666d762be92a56938efe16c874a73bab31be5f99a3b",
+        "RepoTags": [
+            "nginx:latest"
+          ],
+        "RepoDigests": [
+            "nginx@sha256:18156dcd747677b03968621b2729d46021ce83a5bc15118e5bcced925fb4ebb9"
+     
+     
      
   
 ## Run docker Images

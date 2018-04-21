@@ -46,6 +46,30 @@
      REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
      hello-world         latest              e38bc07ac18e        10 days ago         1.85kB
      
+     
+     When you say "docker pull centos". It's going to pull latest version of CentOS as the default tag is "latest"
+     
+     prems-MacBook-Air:~ root# docker pull centos 
+     Using default tag: latest
+     latest: Pulling from library/centos
+     469cfcc7a4b3: Pull complete 
+     Digest: sha256:989b936d56b1ace20ddf855a301741e52abca38286382cba7f44443210e96d16
+     Status: Downloaded newer image for centos:latest
+     
+     When you specify tag "docker pull centos:centos6" it will pull CentOS6 
+     
+     prems-MacBook-Air:~ root# docker pull centos:centos6
+     centos6: Pulling from library/centos
+     987d765a926d: Pull complete 
+     Digest: sha256:67b491e26d566ee9c55578bfd6115554a6e1b805a49502ead32cb1a324466f2c
+     Status: Downloaded newer image for centos:centos6
+     
+     prems-MacBook-Air:~ root# docker images
+     REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+     hello-world         latest              e38bc07ac18e        10 days ago         1.85kB
+     centos              centos6             70b5d81549ec        2 weeks ago         195MB
+     centos              latest              e934aafc2206        2 weeks ago         199MB
+     
   
 ## Run docker Images
      You can use any of these commands to run image:

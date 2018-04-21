@@ -1,5 +1,5 @@
 # Welcome to Docker Github page 
-### <b><i>Installation and Configuration</i></b>(Installation_and_Configuration.md)
+### *Installation and Configuration(Installation_and_Configuration.md)*
 ### *Docker Hub*
 ### *Images*
 ### *Containers*

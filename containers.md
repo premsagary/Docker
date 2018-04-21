@@ -112,19 +112,16 @@
 
 
        When you do ifconfig on terminal
-       you will see docker0:x.x.x.1
-       It will assign ip address from x.x.x.2 - x.x.x.254
+       you will see docker0:172.17.0.1
+       It will assign ip address from 172.17.0.2 - 172.17.0.254
        
 ## Run container in interactive mode 
 
 
       docker run -i -t ID/REPOSITORY:TAG /bin/bash (or) docker run -it ID/REPOSITORY:TAG /bin/bash
-      
-      -i = interactive
-      
-      -t = terminal
-      
-      /bin/bash shell
+            -i = interactive
+            -t = terminal
+            /bin/bash shell
       
       
       prems-MacBook-Air:~ root# docker images

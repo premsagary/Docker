@@ -12,4 +12,4 @@
 ### *Docker commands*
 ### *Builds and Network configuration*
 
-<p><a href="https://github.com/premsagary/docker/blob/master/InstallationandConfiguration.md">Installation and Configuration</a></p>
+<p><a href="https://github.com/premsagary/docker/blob/master/test.html">Installation and Configuration</a></p>

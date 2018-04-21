@@ -254,7 +254,14 @@
       382b94296121        nginx:latest        "nginx -g 'daemon of…"   Less than a second ago   Up 2 seconds        80/tcp              mynginx2
       8471d3559d61        nginx:latest        "nginx -g 'daemon of…"   About a minute ago       Up 2 minutes        80/tcp              mynginx1
       prems-MacBook-Air:~ root#
-    
+      
+      prems-MacBook-Air:~ root# docker stop mynginx1
+      mynginx1
+      prems-MacBook-Air:~ root# docker stop mynginx2
+      mynginx2
+      prems-MacBook-Air:~ root# docker ps
+      CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS                     NAMES
+      prems-MacBook-Air:~ root#
 
         
 #### GO *[BACK](index.md)*

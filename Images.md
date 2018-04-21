@@ -82,7 +82,8 @@
      04b2d3302d48 would be Nginx package installation on the image
      e7f619103861 may be nginx configuration
      
-     When you build/customize a container after pulling the base image, each change you make will become a layer or snapshot        that are added to the image. It will be more clear when we start commiting the images.
+     When you build/customize a container after pulling the base image, each change you make will become a layer or 
+     snapshot that are added to the image. It will be more clear when we start commiting the images.
      
 ## Inspect Images
 

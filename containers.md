@@ -234,6 +234,28 @@
       prems-MacBook-Air:~ root#
 
 
+## Assign a name to conatiner when you run
+
+
+      docker run -d --name=mynginx1 nginx:latest (Command to assign name to a container when you run) 
+      
+      prems-MacBook-Air:~ root# docker run -d --name=mynginx1 nginx:latest
+      8471d3559d6115962ef653036991f4e274bd4d31aa0ea2416c894fa27dea49ef
+      prems-MacBook-Air:~ root#
+      
+      prems-MacBook-Air:~ root# docker ps
+      CONTAINER ID        IMAGE               COMMAND                  CREATED              STATUS              PORTS               NAMES
+      8471d3559d61        nginx:latest        "nginx -g 'daemon of…"   About a minute ago   Up About a minute   80/tcp               mynginx1
+      
+      prems-MacBook-Air:~ root# docker run -d --name=mynginx2 nginx:latest
+      382b94296121795101e9b8085d4a1cfdfbeb50a4ec939a23ed001e5f7357c13d
+      prems-MacBook-Air:~ root# docker ps
+      CONTAINER ID        IMAGE               COMMAND                  CREATED                  STATUS              PORTS               NAMES
+      382b94296121        nginx:latest        "nginx -g 'daemon of…"   Less than a second ago   Up 2 seconds        80/tcp              mynginx2
+      8471d3559d61        nginx:latest        "nginx -g 'daemon of…"   About a minute ago       Up 2 minutes        80/tcp              mynginx1
+      prems-MacBook-Air:~ root#
+    
+
         
 #### GO *[BACK](index.md)*
         

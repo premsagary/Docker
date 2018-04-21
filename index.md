@@ -2,7 +2,7 @@
 
 ### Installation and Configuration
 ### Docker Hub
-### Iamages
+### Images
 ### Containers
 ### Container Lifecycle
 ### Container Management 

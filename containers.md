@@ -2,7 +2,7 @@
 ## Whalesay
 
 
-      ### docker search whalesay
+### docker search whalesay
       
       prems-MacBook-Air:~ root# docker search whalesay
       NAME                            DESCRIPTION                                     STARS               
@@ -11,7 +11,7 @@
       
       
       
-      ### docker pull docker/whalesay
+  ### docker pull docker/whalesay
       
       After search I will pull the image with highest starts
       docker pull NAME
@@ -119,8 +119,11 @@
 
 
       docker run -i -t ID/REPOSITORY:TAG /bin/bash (or) docker run -it ID/REPOSITORY:TAG /bin/bash
+      
       -i = interactive
+      
       -t = terminal
+      
       /bin/bash shell
       
       

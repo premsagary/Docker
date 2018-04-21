@@ -1,4 +1,4 @@
-# Welcome to Docekr Github page
+# Welcome to Docker Github page
 
 ### Installation and Configuration
 ### Docker Hub

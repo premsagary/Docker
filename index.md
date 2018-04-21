@@ -8,6 +8,6 @@
 ### *Container Management* 
 ### *Ports and Volumes*
 ### *Working with multiple Images*
-### *Custimzed Container Packaging*
+### *Customized Container Packaging*
 ### *Docker commands*
 ### *Builds and Network configuration*

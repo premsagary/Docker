@@ -48,7 +48,8 @@
      
   
 ## Run docker Images
-     You can use any of these commands to run image
+     You can use any of these commands to run image:
+     
      docker run REPOSITORY:TAG
      docker run IMAGE ID  
      

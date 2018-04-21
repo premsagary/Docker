@@ -19,7 +19,9 @@
     
     prems-MacBook-Air:~ root# docker search nginx
     NAME                                                   DESCRIPTION                                     STARS               
-    nginx                                                  Official build of Nginx.                         8341                   jwilder/nginx-proxy                                    Automated Nginx reverse proxy for docker con…    1321                   richarvey/nginx-php-fpm                                Container running Nginx + PHP-FPM capable of…    546 
+    nginx                                                  Official build of Nginx.                         8341  
+    jwilder/nginx-proxy                                    Automated Nginx reverse proxy for docker con…    1321   
+    richarvey/nginx-php-fpm                                Container running Nginx + PHP-FPM capable of…    546 
 
     
     The one with the most stars is a good one

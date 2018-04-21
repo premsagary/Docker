@@ -55,6 +55,40 @@
                             \____\______/   
 
 
+       cowsay is the actual application which container is running
+       run is just a way to run a container
+       
+       
+       
+## How to check what containers you are running
+
+
+        docker ps (command to check the running containers)
+        
+        prems-MacBook-Air:~ root# docker ps
+        CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS 
+        prems-MacBook-Air:~ root# 
+        
+        Why would it say it's not running anything? when you just did Whalesay???
+        It's because it's exiting the container after running input on it.
+        
+        But you can check the History of what containers you ran.
+        
+        docker ps -a (command to see history of containers that you ran)
+        
+        prems-MacBook-Air:~ root# docker ps -a
+      CONTAINER ID        IMAGE                COMMAND                  CREATED             STATUS                                        PORTS               NAMES
+      739f815bac79        docker/whalesay      "cowsay Hey, how are…"   10 minutes ago      Exited (0) 11 minutes ago                          hardcore_mahavira
+      ee05cfbe3549        docker/whalesay      "cowsay Hey, images …"   11 minutes ago      Exited (0) 11 minutes ago                          pedantic_lewin
+      8f67ef314e22        docker/whalesay      "cowsay Heydocker im…"   11 minutes ago      Exited (0) 11 minutes ago                          happy_panini
+      4bcc578a65b2        e38bc07ac18e         "/hello"                 About an hour ago   Exited (0) About an hour ago                       inspiring_franklin
+      5c4aaee78fc5        hello-world:latest   "/hello"                 About an hour ago   Exited (0) About an hour ago                       keen_engelbart
+      a766d9aa1a6d        hello-world          "/hello"                 About an hour ago   Exited (0) About an hour ago                       jovial_perlman
+      86c45fd76ac4        b28219773b9b         "/sbin/init"             42 hours ago        Exited (255) 6 hours ago                            22/tcp              determined_kapitsa
+      076451e8b9ff        910f1a0c505d         "/bin/sh -c 'echo eu…"   42 hours ago        Exited (137) 42 hours ago                          minecraft
+      2ed1b189de67        b28219773b9b         "/sbin/init"             42 hours ago        Exited (137) 42 hours ago                          ubuntu-upstart
+        
+
 
 
 

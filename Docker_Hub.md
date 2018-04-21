@@ -2,7 +2,7 @@
 
      Sign up (https://hub.docker.com/)*
 
-     Docker hub is where people save their containers ( pull,push containers)
+     Docker hub is where people save their containers (pull,push containers)
 
      you can pull pre-build base/customized images from this hub
 

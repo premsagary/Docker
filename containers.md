@@ -118,7 +118,7 @@
 ## Run container in interactive mode 
 
 
-      docker run -i -t ID/REPOSITORY:TAG /bin/bash (or) docker run -it ID/REPOSITORY:TAG /bin/bash
+      docker run -i -t ID /bin/bash (or) docker run -it ID/REPOSITORY:TAG /bin/bash
             -i = interactive
             -t = terminal
             /bin/bash shell

@@ -51,13 +51,13 @@
 
      
      You can use any of these commands to run image
+     docker run REPOSITORY:TAG    
+     docker run IMAGE ID  
      
-     docker run REPOSITORY:TAG    
-     docker run IMAGE ID          
+### Example   
      
-     **Example**
-     *docker run hello-world:latest*
-     *docker run e38bc07ac18e*
+     docker run hello-world:latest
+     docker run e38bc07ac18e
      
 
 

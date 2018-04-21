@@ -12,4 +12,4 @@
 ### *Docker commands*
 ### *Builds and Network configuration*
 
-<p><a href="docker/test.html">Installation </a></p>
+<p><a href="/test.html">Installation </a></p>

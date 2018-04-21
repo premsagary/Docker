@@ -159,8 +159,86 @@
       when you exit from the running container, 
       you will no longer see the container when you do "docker ps", you can see in the history using "docker ps -a"
       
+     
+## Run container's in the background in the detached mode
+
+      If you wnt to run the containers in the background / if you want to run the container without you being connected to it.
+      you can you this:
       
+      docker run -d centos:latest /bin/bash
+      -d = disconnected 
       
+      prems-MacBook-Air:~ root# docker run -d nginx:latest /bin/bash
+      d553589fa9e5c9e3d65766cdb91f126f0a5578dd40c9523ca0f1c0d5f3ff4870
+      prems-MacBook-Air:~ root#
+      
+      prems-MacBook-Air:~ root# docker ps
+      CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS       NAMES
+      prems-MacBook-Air:~ root#
+      
+      you still dont see because you want to execute /bin/bash
+      
+      prems-MacBook-Air:~ root# docker run -d nginx:latest          
+      da178c27d7b664afb910dfa2d7ebb041dc3cb1f1ee0af9fe8968cb87f5d7fb8c
+      prems-MacBook-Air:~ root#
+      
+      prems-MacBook-Air:~ root# docker ps
+      CONTAINER ID        IMAGE               COMMAND                  CREATED                  STATUS              PORTS
+         NAMES
+      da178c27d7b6        nginx:latest        "nginx -g 'daemon of…"   Less than a second ago   Up 18 seconds       80/tcp              nifty_liskov
+      
+      prems-MacBook-Air:~ root# docker inspect nifty_liskov
+            [
+                  {
+                  "Id": "da178c27d7b664afb910dfa2d7ebb041dc3cb1f1ee0af9fe8968cb87f5d7fb8c",
+                  "Created": "2018-04-21T21:38:43.404377Z",
+                  "Path": "nginx",
+                  "Args": [
+                  "-g",
+                  "daemon off;"
+                  ..........
+                  ..........
+                  ..........
+                    "Gateway": "172.17.0.1",
+                    "IPAddress": "172.17.0.2",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    ..........
+                    ..........
+                    ..........
+                    
+                    
+        you will see an IPAddress "172.17.0.2" and when you do "docker ps" it will show the port "80 / 443"
+        
+        Install elink (elinks is a text baseed web browser)
+        apt-get install elinks
+        elinks http://172.17.0.2/ (Command to browse the link)
+        you will see Nginx running.
+        
+       
+       
+## Stop a running container 
+
+      docker stop NAME (Command to stop running container)
+        
+      prems-MacBook-Air:~ root# docker ps
+      CONTAINER ID   IMAGE               COMMAND           CREATED             STATUS              PORTS              NAMES
+      8e961e71c57a   b175e7467d66        "nginx -g 'daemon of…"   3 minutes ago       Up 3 minutes 80/tcp    agitated_lamarr
+      prems-MacBook-Air:~ root# docker stop agitated_lamarr
+      agitated_lamarr
+      prems-MacBook-Air:~ root# docker ps
+      CONTAINER ID   IMAGE               COMMAND             CREATED             STATUS            PORTS                 NAMES
+      prems-MacBook-Air:~ root#
+
+
+        
+        
+        
+        
+        
+        
       
       
                   

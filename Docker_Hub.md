@@ -11,7 +11,7 @@ You need to provide username and password in order to pull from that private rep
 
 ## what are the repositories mean????
 
-Docker container is based upon a base Images, when you make changes to those Images and customize it.
+Docker container is based upon a base Images, you make changes to those Images and customize it.
 you can push those customized images to your public/private repositories.
 
 

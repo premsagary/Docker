@@ -1,10 +1,4 @@
-## Run Images
 
-      
-      docker run hello-world:latest
-      docker run e38bc07ac18e
-      
-      
 ## Whalesay
 
 
@@ -35,6 +29,35 @@
       8eed3712d2cf: Pull complete 
       Digest: sha256:178598e51a26abbc958b8a2e48825c90bc22e641de3d31e18aaf55f3258ba93b
       Status: Downloaded newer image for docker/whalesay:latest
+      
+## Run Images
+
+      
+      docker run hello-world:latest
+      docker run e38bc07ac18e
+      
+      When you "run" a container my passing an INPUT, you will get output and you will be exited from the container
+                  
+      prems-MacBook-Air:~ root# docker run docker/whalesay cowsay Hey, how are you Prem?
+                   ________________________ 
+                  < Hey, how are you Prem? >
+                   ------------------------ 
+                      \
+                       \
+                        \     
+                                      ##        .            
+                                ## ## ##       ==            
+                             ## ## ## ##      ===            
+                         /""""""""""""""""___/ ===        
+                    ~~~ {~~ ~~~~ ~~~ ~~~~ ~~ ~ /  ===- ~~~   
+                         \______ o          __/            
+                          \    \        __/             
+                            \____\______/   
+
+
+
+
+
 
     
       

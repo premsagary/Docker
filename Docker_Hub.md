@@ -1,7 +1,7 @@
 # Docker Hub
 
-*Sign up (https://hub.docker.com/)*
-*Docker hub is where people save their containers ( pull,push containers)*
+*Sign up (https://hub.docker.com/)
+*Docker hub is where people save their containers ( pull,push containers)
 *you can pull pre-build base/customized images from this hub*
 You will get 1 free private repository and unlimited public repositories when you register
 You can check plans for buying more private repositories

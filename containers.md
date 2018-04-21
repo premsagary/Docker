@@ -90,8 +90,80 @@
         
 
 
+      When you run a container it will be given a name, for example when I ran Whalesay it gave name as "hardcore_mahavira"
+      you can use this names for inspecting the container 
+      
+      prems-MacBook-Air:~ root# docker inspect hardcore_mahavira
+      [
+        {
+            "Id": "739f815bac79079eae11ddd85f965f59cc4fd8a3753003849ac759c6dd63985c",
+            "Created": "2018-04-21T20:51:21.2085706Z",
+            "Path": "cowsay",
+               "Args": [
+                   "Hey,",
+                   "how",
+                   
+                  ........
+                  ........
+                  ........
+                  
+                  
+## Container IP's
 
 
+       When you do ifconfig on terminal
+       you will see docker0:x.x.x.1
+       It will assign ip address from x.x.x.2 - x.x.x.254
+       
+## Run container in interactive mode 
+
+
+      docker run -i -t ID/REPOSITORY:TAG /bin/bash (or) docker run -it ID/REPOSITORY:TAG /bin/bash
+      -i = interactive
+      -t = terminal
+      /bin/bash shell
+      
+      
+      prems-MacBook-Air:~ root# docker images
+      REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+      hello-world         latest              e38bc07ac18e        10 days ago         1.85kB
+      nginx               latest              b175e7467d66        11 days ago         109MB
+      centos              centos6             70b5d81549ec        2 weeks ago         195MB
+      centos              latest              e934aafc2206        2 weeks ago         199MB
+      docker/whalesay     latest              6b362a9f73eb        2 years ago         247MB
+      
+      
+      prems-MacBook-Air:~ root# docker run -it nginx:latest /bin/bash
+      root@600de7285659:/#
+      
+      If you see I logged into the container 
+      
+      prems-MacBook-Air:~ root# docker run -it nginx:latest /bin/bash
+      root@564c20929831:/# whoami
+      root
+      root@564c20929831:/# apt-get upgrade
+      Reading package lists... Done
+      Building dependency tree       
+      Reading state information... Done
+      Calculating upgrade... Done
+      0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+      
+      If you open a new terminal and do "docker -ps"
+      
+      prems-MacBook-Air:~ root# docker ps  
+      CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS         NAMES
+      564c20929831        nginx:latest        "/bin/bash"         2 minutes ago       Up 2 minutes       80/tcp    sharp_mayer
+      
+      And it also assigned the name "sharp_mayer"
+      
+      when you exit from the running container, 
+      you will no longer see the container when you do "docker ps", you can see in the history using "docker ps -a"
+      
+      
+      
+      
+      
+                  
 
     
       

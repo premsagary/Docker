@@ -87,7 +87,7 @@
      
 ## Inspect Images
 
-     If you want to more about the image yoou can use this command, output will be in JSON.
+     If you want to know more about the image you can use this command, output will be in JSON.
      docker inspect IMAGE ID / REPOSITORY:TAG 
      prems-MacBook-Air:~ root# docker inspect nginx:latest
      [

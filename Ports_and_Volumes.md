@@ -83,6 +83,34 @@
       
       
       you can add your website files to local folder which is monted on container, nginx will use it
+      
+
+##   Docker file for building container
+
+            prems-MacBook-Air:~ premsagar$ vi Dockerfilevi dockerfile
+            
+            FROM debian:stable
+            MAINTAINER prem <prem@docker.com>                                    
+            
+            RUN apt-get update                                   
+            RUN apt-get upgrade
+            RUN apt-get install telnet
+      
+            docker build -t premsagar/myapache .  ( "." will help where to look for dockerfile)
+            
+            it will use cached copies if you remove one "RUN" and run again although if you deleted the Image.
+            
+            Best practice:
+            
+            FROM debian:stable
+            MAINTAINER prem <prem@docker.com>
+            RUN apt-get update && apt-get upgrade -y && apt-get install -y apache2 telnet elinks openssh-server
+            (This will help to create lesss dependent images when you run script) 
+            
+            
+            
+            
+      
 
 
 #### GO *[BACK](index.md)*      

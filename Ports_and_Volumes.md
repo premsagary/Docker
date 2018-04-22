@@ -68,5 +68,21 @@
       prems-MacBook-Air:~ premsagar$ docker port webserver2 $CONTAINERPORT
       80/tcp -> 0.0.0.0:8080
       
+###   Mount your local volume to the container volume when you run it
+
+      prems-MacBook-Air:~ premsagar$ docker run -d -p 8080:80 --name=webserver4 -v /User/premsagar/www/:/usr/share/nginx/html  nginx:latest 
+      a4ead16efdeaf24cb239194705cdc0ae522bb8f0ed21a0f13d547f91d4630b26
+      prems-MacBook-Air:~
       
+      -d      : disconnected mode
+      -p      : Link container port to specific local host
+      8080    : localhost port
+      80      : container port 
+      --name  : name for the container 
+      -v      : mount local volume on container volume 
+      
+      you can add your website files to local folder which is monted on container, nginx will use it
+
+
+#### GO *[BACK](index.md)*      
       

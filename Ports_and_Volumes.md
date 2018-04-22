@@ -68,7 +68,7 @@
       prems-MacBook-Air:~ premsagar$ docker port webserver2 $CONTAINERPORT
       80/tcp -> 0.0.0.0:8080
       
-###   Mount your local volume to the container volume when you run it
+###   Mount your local volume on the container volume when you run it
 
       prems-MacBook-Air:~ premsagar$ docker run -d -p 8080:80 --name=webserver4 -v /User/premsagar/www/:/usr/share/nginx/html  nginx:latest 
       a4ead16efdeaf24cb239194705cdc0ae522bb8f0ed21a0f13d547f91d4630b26

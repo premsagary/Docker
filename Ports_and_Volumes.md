@@ -87,7 +87,9 @@
 
 ##   Docker file for building container
 
-            prems-MacBook-Air:~ premsagar$ vi Dockerfilevi dockerfile
+            prems-MacBook-Air:~ premsagar$ vi Dockerfile
+            
+            vi dockerfile
             
             FROM debian:stable
             MAINTAINER prem <prem@docker.com>                                    

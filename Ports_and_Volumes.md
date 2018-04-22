@@ -100,9 +100,9 @@
             
             it will use cached copies if you remove one "RUN" and run again although if you deleted the Image.
             
-#####       Best practice: 
+#####     Best practice: 
             
-            (This will help to create lesss dependent images when you run script)
+            (This will help to create lesss dependent images when you run script, using "&&")
 
             prems-MacBook-Air:~ premsagar$ vi Dockerfilevi dockerfile
             
@@ -112,6 +112,17 @@
             RUN apt-get update && apt-get upgrade -y && apt-get install -y apache2 telnet elinks openssh-server
             
             ENV PREM prem-docker
+            
+            EXPOSE 80
+            EXPOSE 22
+            
+            CMD ["/usr/sbin/apache2ctl","-D","FOREGROUND"]
+            
+           
+######      RUN, CMD           
+
+             RUN - anything after RUN, will run when creating the base Image
+             CMD - anything after CMD, will run on container
             
             
             

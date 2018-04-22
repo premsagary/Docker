@@ -119,7 +119,7 @@
             CMD ["/usr/sbin/apache2ctl","-D","FOREGROUND"]
             
            
-#####     RUN, CMD           
+#####     RUN, CMD:           
 
             RUN - anything after RUN, will run when creating the base Image
             CMD - anything after CMD, will run on container

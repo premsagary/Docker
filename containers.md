@@ -37,7 +37,7 @@
       docker run hello-world:latest
       docker run e38bc07ac18e
       
-      When you "run" a container my passing an INPUT, you will get output and you will be exited from the container
+      When you "run" a container by passing an INPUT, you will get output and you will be exited from the container
                   
       prems-MacBook-Air:~ root# docker run docker/whalesay cowsay Hey, how are you Prem?
                    ________________________ 

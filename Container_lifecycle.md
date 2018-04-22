@@ -28,6 +28,52 @@
       CONTAINER ID        IMAGE               COMMAND                  CREATED              STATUS              PORTS               NAMES
       65311eaf3159        nginx:latest        "nginx -g 'daemon of…"   About a minute ago   Up About a minute   80/tcp               cycle
       
-##    Attach to the running container 
+##    docker exec
       
+      
+      docker exec -it cycle /bin/bash (Command to exec)
+      
+      exec - execute something without effecting the running container 
+      
+     prems-MacBook-Air:~ root# docker ps
+      CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS               NAMES
+      65311eaf3159        nginx:latest        "nginx -g 'daemon of…"   3 hours ago         Up 3 hours          80/tcp              cycle
+      prems-MacBook-Air:~ root# docker exec -it cycle /bin/bash
+      root@65311eaf3159:/# whoami
+      root
+      root@65311eaf3159:/#
+      root@65311eaf3159:/# exit
+      
+      prems-MacBook-Air:~ root# docker ps
+      CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS               NAMES
+      65311eaf3159        nginx:latest        "nginx -g 'daemon of…"   3 hours ago         Up 3 hours          80/tcp              cycle
+
+      When you exit from "exec -it /bin/bash" it will not affect the running container
+      
+###   Docker stop
+      
+      prems-MacBook-Air:~ root# docker stop 65311eaf3159
+      65311eaf3159
+      prems-MacBook-Air:~ root# docker ps
+      CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS                     NAMES
+      
+      you don't see anything running when you stop the running container
+      
+###   Docker restart 
+      
+      prems-MacBook-Air:~ root# docker restart 65311eaf3159
+      65311eaf3159
+      prems-MacBook-Air:~ root# docker ps
+      CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS               NAMES
+      65311eaf3159        nginx:latest        "nginx -g 'daemon of…"   3 hours ago         Up 2 seconds        80/tcp              cycle
+      prems-MacBook-Air:~ root# 
+      
+      
+###   Docker start
+
+      prems-MacBook-Air:~ root# docker start 65311eaf3159
+      65311eaf3159
+      prems-MacBook-Air:~ root# docker ps
+      CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS               NAMES
+      65311eaf3159        nginx:latest        "nginx -g 'daemon of…"   3 hours ago         Up 2 seconds        80/tcp              cycle
       

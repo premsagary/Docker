@@ -13,7 +13,7 @@
     docker/whalesay     latest              6b362a9f73eb        2 years ago         247MB
     
     
-###Docker remove images
+### Docker remove images
 
     docker rmi ID
     docker rmi -f ID

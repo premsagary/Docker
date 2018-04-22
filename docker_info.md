@@ -58,7 +58,7 @@
             
             You will get info about everything. how many Images are there, how many containers are there.
            
-           
+            Mostly all the containers and files will be in /var/lib/docker 
            
             
             

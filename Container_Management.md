@@ -114,7 +114,7 @@
     
     Remove Image : docker rmi ID
     Remove container : docker rm ID
-    Remove Image forcefully : docker rm -f ID (This will remove the base Image, but not the containers. you can start the      container and still use it)
+    Remove Image forcefully : docker rm -f ID (This will remove the base Image, but not the containers. you can still start the container)
     To list all the containes : docker `ps -a -q`
     Remove all the containers : docker rm `docker ps -a -q`
     

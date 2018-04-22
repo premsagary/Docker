@@ -100,18 +100,20 @@
             
             it will use cached copies if you remove one "RUN" and run again although if you deleted the Image.
             
-            Best practice:
+#####       Best practice: 
+            
+            (This will help to create lesss dependent images when you run script)
+
+            prems-MacBook-Air:~ premsagar$ vi Dockerfilevi dockerfile
             
             FROM debian:stable
             MAINTAINER prem <prem@docker.com>
+            
             RUN apt-get update && apt-get upgrade -y && apt-get install -y apache2 telnet elinks openssh-server
-            (This will help to create lesss dependent images when you run script) 
+            
+            ENV PREM prem-docker
             
             
             
-            
-      
-
-
 #### GO *[BACK](index.md)*      
       

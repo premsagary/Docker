@@ -81,6 +81,7 @@
       --name  : name for the container 
       -v      : mount local volume on container volume 
       
+      
       you can add your website files to local folder which is monted on container, nginx will use it
 
 

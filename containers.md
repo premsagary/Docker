@@ -78,7 +78,7 @@
         docker ps -a (command to see history of containers that you ran)
         
         prems-MacBook-Air:~ root# docker ps -a
-             CONTAINER ID        IMAGE                COMMAND                  CREATED             STATUS                                       PORTS               NAMES
+            CONTAINER ID        IMAGE                COMMAND                  CREATED             STATUS                                       PORTS               NAMES
             739f815bac79        docker/whalesay      "cowsay Hey, how are…"   10 minutes ago      Exited (0) 11 minutes ago                          hardcore_mahavira
             ee05cfbe3549        docker/whalesay      "cowsay Hey, images …"   11 minutes ago      Exited (0) 11 minutes ago                          pedantic_lewin
             8f67ef314e22        docker/whalesay      "cowsay Heydocker im…"   11 minutes ago      Exited (0) 11 minutes ago                          happy_panini
@@ -220,7 +220,7 @@
         
        
        
-## Stop a running container 
+##  Stop a running container 
 
       docker stop NAME (Command to stop running container)
         
@@ -234,7 +234,7 @@
       prems-MacBook-Air:~ root#
 
 
-## Assign a name to conatiner when you run
+##  Assign a name to conatiner when you run
 
 
       docker run -d --name=mynginx1 nginx:latest (Command to assign name to a container when you run) 

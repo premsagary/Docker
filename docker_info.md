@@ -1,7 +1,7 @@
-  #### GO TO *[HOME PAGE](index.md)*
+  ####  GO TO *[HOME PAGE](index.md)*
   
   
-  # Docker info 
+  #    Docker info 
   
   
           docker info (command to get more info on docker)

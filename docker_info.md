@@ -4,7 +4,7 @@
   # Docker info 
   
   
-          docker info (command to get info on docekr)
+          docker info (command to get more info on docker)
           
             prems-MacBook-Air:~ root# docker info            
             Containers: 1

@@ -53,6 +53,7 @@
             79c059631bc4        mybridge01          bridge              local
             5f41f992ea76        none                null                local
             
+            
  ##    Remove a network
  
  

@@ -10,7 +10,7 @@
 ### *[Working with multiple Images](Multiple_containers.md)*
 ### *[Customized Container Packaging](Customized_Container_Packaging.md)*
 ### *[Builds and Network configuration](Builds_Network_configuration.md)*
-### *[Push Inage to HUB](Push_Image_to_hub.md)*
+### *[Push Images to HUB](Push_Image_to_hub.md)*
 ### *[Docker commands](Docker_commands.md)*
 
 

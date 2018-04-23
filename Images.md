@@ -120,6 +120,25 @@
      docker run e38bc07ac18e
      
      
+## Image history 
+
+          docker history IMAGE_NAME
+
+          prems-MacBook-Air:~ root# docker history prem/version1:v1
+          IMAGE               CREATED             CREATED BY                                      SIZE                COMMENT
+          805e77970860        2 hours ago         /bin/bash                                       52.2MB                     Installed ssh teslnet and created user
+          b175e7467d66        12 days ago         /bin/sh -c #(nop)  CMD ["nginx" "-g" "daemon…   0B                  
+          <missing>           12 days ago         /bin/sh -c #(nop)  STOPSIGNAL [SIGTERM]         0B                  
+          <missing>           12 days ago         /bin/sh -c #(nop)  EXPOSE 80/tcp                0B                  
+          <missing>           12 days ago         /bin/sh -c ln -sf /dev/stdout /var/log/nginx…   22B                 
+          <missing>           12 days ago         /bin/sh -c set -x  && apt-get update  && apt…   53.7MB              
+          <missing>           12 days ago         /bin/sh -c #(nop)  ENV NJS_VERSION=1.13.12.0…   0B                  
+          <missing>           12 days ago         /bin/sh -c #(nop)  ENV NGINX_VERSION=1.13.12…   0B                  
+          <missing>           5 weeks ago         /bin/sh -c #(nop)  LABEL maintainer=NGINX Do…   0B                  
+          <missing>           5 weeks ago         /bin/sh -c #(nop)  CMD ["bash"]                 0B                  
+          <missing>           5 weeks ago         /bin/sh -c #(nop) ADD file:e3250bb9848f956bd…   55.3MB  
+     
+     
 #### GO *[BACK](index.md)*
 
          

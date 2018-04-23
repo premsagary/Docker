@@ -3,7 +3,7 @@
 ### *[Docker Hub](Docker_Hub.md)*
 ### *[Images](Images.md)*
 ### *[Containers](containers.md)*
-### *[docker info](docker_info.md)*
+### *[Docker info](docker_info.md)*
 ### *[Container Lifecycle](Container_lifecycle.md)*
 ### *[Container Management](Container_Management.md)* 
 ### *[Ports and Volumes](Ports_and_Volumes.md)*

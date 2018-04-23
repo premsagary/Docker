@@ -14,6 +14,7 @@
         docker logs CONTAINER_NAME  (to check log of container)
         docker exec CONTAINER_NAME COMMAND  (to run command from local machine on a container without logging in)
         docker images
+        docker history CONTAINER_NAME
         docker inspect CONTAINER_NAME
         docker inspect CONTAINER_NAME | grep IPAddress
         docker start
@@ -32,7 +33,7 @@
         docker network rm NETWORK_NAME
         docker run -d --name=CONTAINER_NAME --net NETWORK_NAME centos:latest /bin/bash
         docker run -itd --name=CONTAINER_NAME --net NETWORK_NAME --ip 10.1.0.100 nginx:latest /bin/bash
-        docker history CONTAINER_NAME
+        
         
         
         

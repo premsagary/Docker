@@ -33,7 +33,10 @@
         docker network rm NETWORK_NAME
         docker run -d --name=CONTAINER_NAME --net NETWORK_NAME centos:latest /bin/bash
         docker run -itd --name=CONTAINER_NAME --net NETWORK_NAME --ip 10.1.0.100 nginx:latest /bin/bash
-        
+        docker tag IMAGE_NAME REPOSITORY_NAME
+        login to docker 
+        docker push REPOSITORY_NAME   (It will push images that tagged)
+        docker logout 
         
         
         

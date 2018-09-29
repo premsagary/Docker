@@ -36,7 +36,18 @@
         docker tag IMAGE_NAME REPOSITORY_NAME
         login to docker 
         docker push REPOSITORY_NAME   (It will push images that tagged)
-        docker logout 
+        docker logout
+        dockre info | grep Storage
+        /etc/docker  file - daemon.json -- /var/lib/docker
+        docker info | grep Logging
+        docker logs CONTAINERID (To change logs location edit daemon.json)
+        docker swarm init --advertise-addr IP ( To add manager )
+        docker swarm join-token worker (If you forget token)
+        docker swarm join-token manager (to create a new manager for the node)
+        docker system info | more 
+        docker node ls
+        
+        
         
         
         

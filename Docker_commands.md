@@ -46,6 +46,30 @@
         docker swarm join-token manager (to create a new manager for the node)
         docker system info | more 
         docker node ls
+        docker service create --name backup --publish 80:80 --replicas 2 CONTAINERNAME 
+        docker service ps backup
+        docker service ls
+        docker swarm init --force-new-cluster
+        docker container run --rm -it --name ucp -v /var/run/docker.sock:/var/run/docker.sock docker/ucp:latest install --host-address    IP  --interactive
+        docker search imagename
+        docker rm $(docker ps -a -q)
+        docker rm $(docker ps -q)
+        docker rmi -f $(docker images -q)
+        docker build -t imagename .
+        docker export imagename > imagename.tar
+        docker import imagename.tar newimagename
+        docker image history imagename
+        ------------
+        Dockefile - Instructions
+        FROM centos:6
+        LABEL maintainer="prem@yelgoi.com" (MAINTAINER is depricated)
+        RUN yum update -y && yum install httpd net-tools
+        CMD echo "Hello" (Only one for docker file, cannot run multiple - If you give multiple only the last one will run)
+        ENV ENVIRONMENT="production"
+        EXPOSE 80
+        ENTRYPOINT apachectl "-DFOREGROUND"
+        dockre run -d --name givename --rm name
+        
         
         
         
